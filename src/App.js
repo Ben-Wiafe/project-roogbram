@@ -6,6 +6,7 @@ import Features from './components/features'
 import Testimony from './components/testimonial'
 import Footer from './components/footer'
 import Contact from './components/contact'
+import Video from './components/Video'
  
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Features/>
       <Testimony/>
       <Contact/>
+      <Video/>
       <Footer/>
     </div>
   )
