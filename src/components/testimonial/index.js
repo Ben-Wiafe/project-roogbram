@@ -50,7 +50,7 @@ function Testimony() {
         <div class=" rounded-lg mb-4 w-2/4 h-1/6 p-4  lg:bg-white shadow lg:shadow-2xl sm:shadow-xl sm: bg-green-600 md:bg-yellow-600 text-md font-bold sm:max-2-sm lg:max-w-lg">
           {" "}
           Best Standard SAT App so far!!
-          <p class="font-normal text-sm ">
+          <p class="font-normal text-sm">
             According to a survey by Runzheimer International, the average cost
             of a fast-food meal (quarter-pound cheeseburger, large fries, medium
             soft drink, excluding taxes) in Seattle is $4.82. Suppose this
