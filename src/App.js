@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navigation from './components/navigation'
+import FirstBody from './components/body'
+import Aikins from './components/2body'
+import Features from './components/features'
+import Testimony from './components/testimonial'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="px-6 py-3 pt-4">
+      <Navigation/>
+      <FirstBody/>
+      <Aikins/>
+      <Features/>
+      <Testimony/>
     </div>
-  );
+  )
 }
-
-export default App;
