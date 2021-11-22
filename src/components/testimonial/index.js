@@ -29,7 +29,7 @@ function Testimony() {
           <img
             class="w-6 rounded-xl h-6"
             src={Azay}
-            alt="picture of azay smiling"
+            alt="A boy smiling"
           />
           <div></div>
           <div class="lg:flex-column sm:flex-row max-w-xl md:flex-column max-w-lg">
@@ -62,7 +62,7 @@ function Testimony() {
           <img
             class="w-6 rounded-xl h-6"
             src={She}
-            alt="picture of azay smiling"
+            alt="A boy smiling"
           />
           <div></div>
           <div class="lg:flex-column sm:flex-row max-w-xl md:flex-column max-w-lg">
