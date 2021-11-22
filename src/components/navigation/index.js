@@ -1,46 +1,225 @@
-import React from "react";
+import react from "react";
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { PlusSmIcon } from "@heroicons/react/solid";
+import Log from "../../assets/logo.png";
 
-import Logo from "../../assets/logo.png";
-
-export default function Navigation() {
-
-
-
-
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
+export default function Example() {
   return (
-    <nav class="flex items-center justify-around flex-wrap  p-1  ">
-     <div class="flex items-center flex-shrink-0 ml-8">
-     <a href="#">
-     <img src={Logo} alt="uLearner logo" /> 
-     </a> 
-     </div>
+    <Disclosure as="nav" className="bg-white shadow">
+      {({ open }) => (
+        <>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between h-16">
+              <div className="flex">
+                <div className="-ml-2 mr-2 flex items-center md:hidden">
+                  {/* Mobile menu button */}
+                  <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <span className="sr-only">Open main menu</span>
+                    {open ? (
+                      <XIcon className="block h-6 w-6" aria-hidden="true" />
+                    ) : (
+                      <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                    )}
+                  </Disclosure.Button>
+                </div>
+                <div className="flex-shrink-0 flex items-center">
+                  <img
+                    className="block lg:hidden h-8 w-21 h-10"
+                    src={Log}
+                    alt="Workflow"
+                  />
+                  <img
+                    className="hidden lg:block h-12 w-25"
+                    src={Log}
+                    alt="Workflow"
+                  />
+                </div>
+                <div className="hidden md:ml-6 md:flex md:space-x-8">
+                  {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
+                  <a
+                    href="#"
+                    className="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                  >
+                    Home
+                  </a>
+                  <a
+                    href="#"
+                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                  >
+                    AEC
+                  </a>
+                  <a
+                    href="#"
+                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                  >
+                    About Us
+                  </a>
+                  <a
+                    href="#"
+                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                  >
+                    Contact Us
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <button
+                    type="button"
+                    className="relative inline-flex items-center px-6 py-3 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-500 shadow-sm hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                  >
+                    <span>Download</span>
+                  </button>
+                </div>
+                <div className="hidden md:ml-4 md:flex-shrink-0 md:flex md:items-center">
+                  <button
+                    type="button"
+                    className="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  >
+                  </button>
+                  {/* Profile dropdown
+                  <Menu as="div" className="ml-3 relative">
+                    <div>
+                      <Menu.Button className="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        <span className="sr-only">Open user menu</span>
+                        <img
+                          className="h-8 w-8 rounded-full"
+                          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                          alt=""
+                        />
+                      </Menu.Button>
+                    </div>
+                    <Transition
+                      as={Fragment}
+                      enter="transition ease-out duration-200"
+                      enterFrom="transform opacity-0 scale-95"
+                      enterTo="transform opacity-100 scale-100"
+                      leave="transition ease-in duration-75"
+                      leaveFrom="transform opacity-100 scale-100"
+                      leaveTo="transform opacity-0 scale-95"
+                    >
+                      <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                        <Menu.Item>
+                          {({ active }) => (
+                            <a
+                              href="#"
+                              className={classNames(
+                                active ? "bg-gray-100" : "",
+                                "block px-4 py-2 text-sm text-gray-700"
+                              )}
+                            >
+                              Your Profile
+                            </a>
+                          )}
+                        </Menu.Item>
+                        <Menu.Item>
+                          {({ active }) => (
+                            <a
+                              href="#"
+                              className={classNames(
+                                active ? "bg-gray-100" : "",
+                                "block px-4 py-2 text-sm text-gray-700"
+                              )}
+                            >
+                              Settings
+                            </a>
+                          )}
+                        </Menu.Item>
+                        <Menu.Item>
+                          {({ active }) => (
+                            <a
+                              href="#"
+                              className={classNames(
+                                active ? "bg-gray-100" : "",
+                                "block px-4 py-2 text-sm text-gray-700"
+                              )}
+                            >
+                              Sign out
+                            </a>
+                          )}
+                        </Menu.Item>
+                      </Menu.Items>
+                    </Transition>
+                  </Menu> */}
+                </div>
+              </div>
+            </div>
+          </div>
 
-     <div class="block lg:hidden">
-       <button id ="nav-toggle" class = "flex items-center px-3 py-2  text-gray-500 hover:text-yellow-500">
-       <svg class="fill-current h-5 w-8" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-       </button>
-     </div>
-    
-      <div class="flex-grow lg:flex lg:items-center lg:auto hidden lg:block lg pt-0 topnav" id= "myTopnav">
-      <ul class="list-reset lg:flex justify-end flex-1 items-center mr-6 ">
-          <li class="mr-6">
-          <a class="py-2 px-2 hover:text-yellow-500 " href="#">Home</a>
-        </li>
-        <li class="mr-6">
-          <a class="inline-block px-2 py-2 hover:text-yellow-500 text-gray-500" href="#"> About Us</a>
-        </li>
-        <li class="mr-4">
-          <a class="inline-block px-2 py-2 hover:text-yellow-500 text-gray-500" href="#">AEC</a>
-        </li>
-        <li>
-        <span class="bg-yellow-500 rounded-xl  border-1 px-10 py-4 ml-4 text-white ">
-        <a href="https://play.google.com/store/apps">Download</a>
-      </span> 
-        </li>
-      </ul>
-      </div>
-
-    
-    </nav>
+          <Disclosure.Panel className="md:hidden">
+            <div className="pt-2 pb-3 space-y-1">
+              {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
+              <Disclosure.Button
+                as="a"
+                href="http://localhost:3000/#"
+                className="bg-yellow-200 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+              >
+                Home
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="#"
+                className="border-transparent text-gray-500 hover:bg-yellow-100
+hover:border-gray-300 hover:text-yellow-700 block pl-3 pr-4 py-2 border-l-4 text-base
+font-medium sm:pl-5 sm:pr-6"
+              >
+                AEC
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="#"
+                className="border-transparent text-gray-500 hover:bg-yellow-100
+hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base
+font-medium sm:pl-5 sm:pr-6"
+              >
+                Contact Us
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="http://localhost:3000/#"
+                className="border-transparent text-gray-500 hover:bg-yellow-100
+hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base
+font-medium sm:pl-5 sm:pr-6"
+              >
+                About Us
+              </Disclosure.Button>
+            </div>
+            <div className="pt-4 pb-3 border-t border-gray-200">
+              <div className="flex items-center px-4 sm:px-6">
+                <div className="flex-shrink-0">
+                  <span className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-300 shadow-sm hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    Downloads
+                  </span>
+                </div>
+              </div>
+              <div className="mt-3 space-y-1">
+                <Disclosure.Button
+                  as="a"
+                  href="#"
+                  className="block px-4 py-2 text-base font-medium text-gray-500
+hover:text-gray-800 hover:bg-gray-100 sm:px-6"
+                >
+              
+                  App Store
+                </Disclosure.Button>
+                <Disclosure.Button
+                  as="a"
+                  href="#"
+                  className="block px-4 py-2 text-base font-medium text-gray-500
+                  hover:text-gray-800 hover:bg-gray-100 sm:px-6"
+                >
+                  Google Play Store
+                </Disclosure.Button>
+              </div>
+            </div>
+          </Disclosure.Panel>
+        </>
+      )}
+    </Disclosure>
   );
 }
