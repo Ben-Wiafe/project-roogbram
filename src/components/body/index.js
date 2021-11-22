@@ -11,7 +11,7 @@ export default function FirstBody() {
     <div class="flex my-20 mx-4 justify-between">
       <div class="ml-8">
         <p class="text-yellow-500 font-medium mb-3 ">SAT EDUCATION MATERIALS</p>
-        <h2 class="text-5xl font-bold text-blue-800 opacity-80">
+        <h2 class="text-5xl font-bold text-blue-800 opacity-80 font-Poppins">
           {" "}
           The #1 Education Platform{" "}
         </h2>
