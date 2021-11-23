@@ -2,8 +2,7 @@ import React from "react";
 import logo from "../../assets/elearning.png";
 import google from "../../assets/google sto.svg";
 import apple from "../../assets/Os store.svg";
-import {FaFileInvoice, FaCalendarAlt,} from 'react-icons/fa'
-import {TiGroup} from 'react-icons/ti';
+
 
 export default function FirstBody() {
   return (
