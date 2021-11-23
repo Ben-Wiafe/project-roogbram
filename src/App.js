@@ -7,12 +7,14 @@ import Testimony from './components/testimonial'
 import Footer from './components/footer'
 import Contact from './components/contact'
 import Video from './components/Video'
+import Benefit from './components/benefit'
  
 export default function App() {
   return (
     <div class="px-2 py-3 pt-4">
       <Navigation/>
       <FirstBody/>
+      <Benefit/>
       <Aikins/>
       <Features/>
       <Testimony/>
