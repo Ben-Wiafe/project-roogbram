@@ -18,12 +18,12 @@ export default function FirstBody() {
       </div>
       <div class="ml-8">
         <p class="text-yellow-500 font-medium mb-3 ">SAT EDUCATION MATERIALS</p>
-        <h2 class="text-5xl font-bold text-blue-800 opacity-80 font-Poppins">
+        <h2 class="text-5xl font-semibold text-blue-800 opacity-80 font-Poppins">
           {" "}
           The #1 Education Platform{" "}
         </h2>
-        <h2 class="text-5xl font-bold text-blue-800 opacity-80"> for SAT Students </h2>
-        <p class="max-w-2xl pt-3">
+        <h2 class="text-5xl font-semibold text-blue-800 opacity-80"> for SAT Students </h2>
+        <p class="max-w-2xl pt-3 opacity-60">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. dummy text ever since the 1500s, when an unknown printer
           took a galley of type It has survived not only five centuries, but
@@ -41,9 +41,9 @@ export default function FirstBody() {
     
     </div>
     <div>
-          <p class="text-center justify-center items-center font-bold font-serif text-lg flex text-blue-900"> Here are some <p class="ml-2 mr-2 text-yellow-500"> benefits </p> of uLEARNER</p>
-          <h5 class="text-center text-gray-500 text-sm">uLEARNER is an educational platform with Scholastic Aptitude Test </h5>
-          <h5 class="text-center text-gray-500 text-sm">(SAT) material for students preparing to take the test</h5>
+          <p class="text-center justify-center items-center font-semibold text-lg flex text-blue-900 text-3xl py-2"> Here are some <p class="ml-2 mr-2 text-yellow-500"> benefits </p> of uLEARNER</p>
+          <h5 class="text-center text-gray-500 text-lg">uLEARNER is an educational platform with Scholastic Aptitude Test </h5>
+          <h5 class="text-center text-gray-500 text-lg">(SAT) material for students preparing to take the test</h5>
  </div>
       </div>
   );
