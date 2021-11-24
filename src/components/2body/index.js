@@ -9,17 +9,17 @@ import { InboxIcon, SparklesIcon } from '@heroicons/react/outline'
 
 export default function Aikins() {
   return (
-    <div className="relative bg-white pt-16 pb-32 overflow-hidden">
+    <div className="relative inline-flex bg-white pt-16 pb-32 lg:flex justify-between sm:flex-column sm:items-center sm:justify-center overflow-hidden">
       <div className="relative">
-        <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-          <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+        <div className="lg:mx-auto  lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+          <div className="px- max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0 lg:max-w-xl">
             <div>
-              <div>
-                <span className="h-12 w-12 rounded-md flex items-center justify-center bg-y-600">
+              {/* <div>
+                <span className="h-12 w-12 rounded-md flex items-center justify-center bg-yellow-600">
                   <InboxIcon className="h-6 w-6 text-white" aria-hidden="true" />
                 </span>
-              </div>
-              <div className="mt-6">
+              </div> */}
+              <div className="mt-6 px-4 ">
                 <span className="text-3xl font-bold tracking-tight text-gray-900 leading-10">
                 Enroll<span class="text-yellow-500 ml-1">with Aikins Educational <br/> Consult </span>  & Start Learning for SAT
                 </span>
@@ -40,10 +40,10 @@ export default function Aikins() {
             </div>
          
           </div>
-          <div className="mt-12 sm:mt-16 lg:mt-0">
-            <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative mt-12 lg:h-full">
+          <div>
+            <div>
               <img
-                className="w-full ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                className="inline-flex pt-7"
                 src={Aec}
                 alt="AEC Logo"
               />
