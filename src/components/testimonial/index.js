@@ -7,14 +7,14 @@ function Testimony() {
   return (
     <div>
       <div class="text-center mt-14 -ml-14 sm:flex-column items-center sm:flex-grow lg:justify-evenly">
-        <p class="text-yellow-700 font-semibold text-sm"> Testimonial</p>
-        <p class="text-blue-800 font-semibold text-lg">
+        <p class="text-yellow-500 font-semibold text-md"> Testimonial</p>
+        <p class="text-blue-800 font-semibold text-2xl">
           {" "}
           What our users say about us
         </p>
       </div>
       <div class="flex justify-center space-x-10 items-center pt-4 mb-4 ">
-        <div class=" rounded-lg mb-4 max-w- w-2/4 h-1/6 p-4 lg:bg-white shadow-2xl sm: bg-green-600 md:bg-yellow-600 text-md font-bold sm:max-2-sm lg:max-w-lg">
+        <div class=" rounded-lg mb-4 max-w- w-2/4 h-1/6 p-4 lg:bg-white shadow lg:shadow-md  sm:shadow-md sm: bg-green-600 md:bg-yellow-500 text-md font-bold sm:max-2-sm lg:max-w-lg">
           {" "}
           My House Sold Out Fast!
           <p class="font-normal text-sm">
@@ -47,7 +47,7 @@ function Testimony() {
         </div>
         </div>
 
-        <div class=" rounded-lg mb-4 w-2/4 h-1/6 p-4  lg:bg-white shadow lg:shadow-2xl sm:shadow-xl sm: bg-green-600 md:bg-yellow-600 text-md font-bold sm:max-2-sm lg:max-w-lg">
+        <div class=" rounded-lg mb-4 w-2/4 h-1/6 p-4  lg:bg-white shadow lg:shadow-md sm:shadow-md sm: bg-green-600 md:bg-yellow-500 text-md font-bold sm:max-2-sm lg:max-w-lg">
           {" "}
           Best Standard SAT App so far!!
           <p class="font-normal text-sm">
