@@ -11,7 +11,7 @@ import Benefit from './components/benefit'
  
 export default function App() {
   return (
-    <div class="px-2 py-3 pt-4">
+    <div class="px-2 py-1 pt-4">
       <Navigation/>
       <FirstBody/>
       <Benefit/>
