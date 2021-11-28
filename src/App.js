@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react'
+import Navigation from './components/navigation'
+import FirstBody from './components/body'
+import Aikins from './components/2body'
+import Features from './components/features'
+import Testimony from './components/testimonial'
+import Footer from './components/footer'
+import Contact from './components/contact'
+import Video from './components/Video'
+import Benefit from './components/benefit'
+ 
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="px-2 py-1 pt-4 ml-14">
+      <Navigation/>
+      <FirstBody/>
+      <Benefit/>
+      <Aikins/>
+      <Features/>
+      <Testimony/>
+      <Contact/>
+      <Video/>
+      <Footer/>
     </div>
-  );
+  )
 }
-
-export default App;
