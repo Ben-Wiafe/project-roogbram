@@ -8,7 +8,7 @@ export default function FirstBody() {
   return (
     <div>
     <div className="lg:flex my-20 mx-4 justify-around p-4 sm:flex-column md:flex:column md:items-center">
-    <div className="-mt-8 mr-12">
+    <div className="-mt-8 mr-11">
         <img
           className="transform skew-y-12 -skew-x-12 mr-4 sm:ml-24 md:w-8/12 lg:w-full  "
           src={logo}
