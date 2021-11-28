@@ -7,8 +7,8 @@ function Testimony() {
   return (
     <div >
       <div className="text-center mt-14 -ml-14 sm:flex-column items-center  lg:justify-evenly">
-        <p className="text-yellow-500 font-semibold text-md"> Testimonial</p>
-        <p className="text-blue-800 font-semibold text-2xl">
+        <p className="text-yellow-500 font-semibold text-2xl lg:text-3xl"> Testimonial</p>
+        <p className="text-blue-800 font-semibold text-2xl lg:text-3xl">
           {" "}
           What our users say about us
         </p>

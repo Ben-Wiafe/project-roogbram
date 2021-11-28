@@ -29,7 +29,7 @@ export default function FirstBody() {
           took a galley of type It has survived not only five centuries, but
           also the leap into electronic.
         </p>
-        <div className="flex ">
+        <div className="flex " id="downloads">
           <a href=" # ">
             <img className=" p-1 mt-7" src={google} alt="App store" width="170" />
           </a>
