@@ -32,7 +32,7 @@ function Testimony() {
             src={Azay}
             alt="A boy smiling"
           />
-          <div></div>
+          
           <div className="lg:flex-column sm:flex-row max-w-xl md:flex-column max-w-lg">
             <p className="font-bold lg:text-xs md:text-lg sm:text-md"> Bernard Wiafe</p>
             <p className="lg:font-normal lg:text-xs sm:text-lg sm:ml-0  sm:mr-5">
@@ -66,7 +66,8 @@ function Testimony() {
             alt="A boy smiling"
           />
           <div></div>
-          <div className="lg:flex-column sm:flex-row max-w-xl md:flex-column max-w-lg">
+          <div className="flex items-center justify-center">
+          <div className="lg:flex-column sm:flex-row max-w-sm md:flex-column max-w-lg">
             <p className="font-bold lg:text-xs md:text-md"> Richard Amuzu</p>
             <p className="lg:font-normal lg:text-xs  md:text-md">Student @ KNUST
             </p>
@@ -75,7 +76,8 @@ function Testimony() {
             <BsStarFill style={{size:15, color:'#F59E0B'}}  />
           </div>
           <div >
-            <p className="ml-0 font-bold text-sm sm:mr-2">4.5</p>
+            <p className="ml-2 font-bold text-sm sm:mr-2">4.8</p>
+          </div>
           </div>
         </div>
         </div>

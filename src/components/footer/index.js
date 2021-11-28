@@ -5,24 +5,20 @@ const navigation = {
     solutions: [
       { name: 'Marketing', href: '#' },
       { name: 'Analytics', href: '#' },
-      { name: 'Commerce', href: '#' },
-      { name: 'Insights', href: '#' },
+      
     ],
     support: [
       { name: 'Pricing', href: '#' },
-      { name: 'Documentation', href: '#' },
-      { name: 'Guides', href: '#' },
-      { name: 'API Status', href: '#' },
+      { name: 'Document', href: '#' },
+    
     ],
     company: [
-      { name: 'About', href: '#' },
+      { name: 'About', href: '#footer' },
       { name: 'Blog', href: '#' },
-      { name: 'Jobs', href: '#' },
-      { name: 'Press', href: '#' },
-      { name: 'Partners', href: '#' },
+     
     ],
     legal: [
-      { name: 'Claim', href: '#' },
+  
       { name: 'Privacy', href: '#' },
       { name: 'Terms', href: '#' },
     ],
@@ -93,7 +89,7 @@ const navigation = {
   
   export default function Footer() {
     return (
-      <footer className="bg-gray-50" aria-labelledby="footer-heading">
+      <footer className="bg-gray-50 mt-10" aria-labelledby="footer-heading">
         <h2 id="footer-heading" className="sr-only">
           Footer
         </h2>
@@ -116,7 +112,7 @@ const navigation = {
                 ))}
               </div>
             </div>
-            <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2 ml-80">
+            <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2 lg:ml-80">
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
                   <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase">Solutions</h3>

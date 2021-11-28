@@ -26,7 +26,7 @@ export default function Example() {
                   />
                
                 </div>
-                <div className="px-60 sm:px-80 mr-2 flex items-center md:hidden">
+                <div className="pl-72 sm:px-80 mr-2 flex items-center md:hidden">
                   
                   <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Open main menu</span>
