@@ -1,13 +1,9 @@
-import react from "react";
 import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
-import { PlusSmIcon } from "@heroicons/react/solid";
+import { Disclosure,} from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Log from "../../assets/logo.png";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+
 export default function Example() {
   return (
     <Disclosure as="nav" className="bg-white shadow">
@@ -16,8 +12,22 @@ export default function Example() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
               <div className="flex">
-                <div className="-ml-2 mr-2 flex items-center md:hidden">
-                  {/* Mobile menu button */}
+              <div className="flex-shrink-0 flex items-center" id="home">
+                <img
+                    className="hidden lg:block h-12 w-25"
+                    src={Log}
+                    alt="Workflow"
+                  />
+                  
+                  <img
+                    className="block lg:hidden h-8 w-21 h-10"
+                    src={Log}
+                    alt="Workflow"
+                  />
+               
+                </div>
+                <div className="px-60 sm:px-80 mr-2 flex items-center md:hidden">
+                  
                   <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
@@ -27,40 +37,30 @@ export default function Example() {
                     )}
                   </Disclosure.Button>
                 </div>
-                <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="block lg:hidden h-8 w-21 h-10"
-                    src={Log}
-                    alt="Workflow"
-                  />
-                  <img
-                    className="hidden lg:block h-12 w-25"
-                    src={Log}
-                    alt="Workflow"
-                  />
-                </div>
+               
                 <div className="hidden md:ml-6 md:flex md:space-x-8">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <a
-                    href="#"
-                    className="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                    href="#home"
+                    className=" text-gray-500 inline-flex items-center px-1 pt-1  text-sm font-medium"
                   >
                     Home
                   </a>
                   <a
-                    href="#"
+                    href="mailto:paakow46@yahoo.com"
                     className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     AEC
                   </a>
                   <a
-                    href="#"
+                    href="#footer"
+                    
                     className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     About Us
                   </a>
                   <a
-                    href="#"
+                    href="#Contact"
                     className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     Contact Us
@@ -71,7 +71,7 @@ export default function Example() {
                 <div className="flex-shrink-0">
                   <button
                     type="button"
-                    className="relative inline-flex items-center px-6 py-3 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-500 shadow-sm hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                    className="relative inline-flex items-center px-6 py-3 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-500 shadow-sm hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 hidden lg:block md:block sm:hidden"
                   >
                     <span>Download</span>
                   </button>
@@ -157,13 +157,13 @@ export default function Example() {
               <Disclosure.Button
                 as="a"
                 href="http://localhost:3000/#"
-                className="bg-yellow-200 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                className=" block pl-3 ml-2 pr-4 py-2 text-gray-500 text-base font-medium sm:pl-5 sm:pr-6"
               >
                 Home
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="#"
+                href="mailto:paakow46@yahoo.com"
                 className="border-transparent text-gray-500 hover:bg-yellow-100
 hover:border-gray-300 hover:text-yellow-700 block pl-3 pr-4 py-2 border-l-4 text-base
 font-medium sm:pl-5 sm:pr-6"
@@ -172,7 +172,7 @@ font-medium sm:pl-5 sm:pr-6"
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="#"
+                href="#Contact"
                 className="border-transparent text-gray-500 hover:bg-yellow-100
 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base
 font-medium sm:pl-5 sm:pr-6"
@@ -181,7 +181,7 @@ font-medium sm:pl-5 sm:pr-6"
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="http://localhost:3000/#"
+                href="#footer"
                 className="border-transparent text-gray-500 hover:bg-yellow-100
 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base
 font-medium sm:pl-5 sm:pr-6"
@@ -200,7 +200,8 @@ font-medium sm:pl-5 sm:pr-6"
               <div className="mt-3 space-y-1">
                 <Disclosure.Button
                   as="a"
-                  href="#"
+                  href="https://www.apple.com/services/"
+                  target="_blank"
                   className="block px-4 py-2 text-base font-medium text-gray-500
 hover:text-gray-800 hover:bg-gray-100 sm:px-6"
                 >
@@ -209,7 +210,8 @@ hover:text-gray-800 hover:bg-gray-100 sm:px-6"
                 </Disclosure.Button>
                 <Disclosure.Button
                   as="a"
-                  href="#"
+                  target="_blank"
+                  href="https://play.google.com/store/search?q=ulearner"
                   className="block px-4 py-2 text-base font-medium text-gray-500
                   hover:text-gray-800 hover:bg-gray-100 sm:px-6"
                 >
