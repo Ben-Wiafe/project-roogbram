@@ -1,11 +1,5 @@
-import React from 'react'
-import Aec from '../../assets/aec.png'
-import frame from '../../assets/register.png'
-
-
-
-
-import { InboxIcon, SparklesIcon } from '@heroicons/react/outline'
+import React from "react";
+import Aec from "../../assets/aec.png";
 
 export default function Aikins() {
   return (
@@ -16,17 +10,21 @@ export default function Aikins() {
             <div>
               {/* <div>
                 <span className="h-12 w-12 rounded-md flex items-center justify-center bg-yellow-600">
-                  <InboxIcon className="h-6 w-6 text-white" aria-hidden="true" />
+                
                 </span>
               </div> */}
               <div className="mt-6 px-4 ">
                 <span className="text-3xl font-bold tracking-tight text-gray-900 leading-10">
-                Enroll<span class="text-yellow-500 ml-1">with Aikins Educational <br/> Consult </span>  & Start Learning for SAT
+                  Enroll
+                  <span class="text-yellow-500 ml-1">
+                    with Aikins Educational <br /> Consult{" "}
+                  </span>{" "}
+                  & Start Learning for SAT
                 </span>
                 <p className="mt-4 text-lg text-gray-500 ">
-                Traditional and online schools may use Aikins Educational Consult 
-                to handle scheduling, attendance, payments, and virtual classes 
-                all in one secure cloud-based system.
+                  Traditional and online schools may use Aikins Educational
+                  Consult to handle scheduling, attendance, payments, and
+                  virtual classes all in one secure cloud-based system.
                 </p>
                 <div className="mt-6">
                   <a
@@ -38,19 +36,14 @@ export default function Aikins() {
                 </div>
               </div>
             </div>
-         
           </div>
           <div>
             <div>
-              <img
-                className="inline-flex pt-7"
-                src={Aec}
-                alt="AEC Logo"
-              />
+              <img className="inline-flex pt-7" src={Aec} alt="AEC Logo" />
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
