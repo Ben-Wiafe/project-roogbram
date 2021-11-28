@@ -1,16 +1,13 @@
-/* This example requires Tailwind CSS v2.0+ */
+import React from 'react';
 import {
     CloudUploadIcon,
-    CogIcon,
     LockClosedIcon,
     RefreshIcon,
-    ServerIcon,
-    ShieldCheckIcon,
    } from '@heroicons/react/outline'
    const features = [
     { name: 'Online Billing, Invoicing, & Contracts', icon: CloudUploadIcon, message:'Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts' },
     { name: 'Easy Scheduling & Attendance Tracking', icon: LockClosedIcon, message:'Schedule and reserve classrooms at one campus or multiple campuses. Keep detailed records of student attendance' },
-    { name: 'Customer Tracking', icon: RefreshIcon, message:'Automate and track emails to individuals or groups. Skilline’s built-in system helps organize your organization ' },
+    { name: 'Customer Tracking', icon: RefreshIcon, message:'Automate and track emails to individuals or groups. Skilline’s built-in system helps organize your organization. Effective record keeping of students' },
     // { name: 'Advanced Security', icon: ShieldCheckIcon, message:'The content would break out of your element and it would be 142px wide, rather than 100px. Why is that?' },
     // { name: 'Powerful API', icon: CogIcon, message:' The box model is a core foundation of CSS and understanding how it works, ho' },
     // { name: 'Database Backups', icon: ServerIcon, message:'LSecurity upont' },
