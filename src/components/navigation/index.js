@@ -69,12 +69,13 @@ export default function Example() {
               </div>
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <button
-                    type="button"
-                    className="relative inline-flex items-center px-6 py-3 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-500 shadow-sm hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 hidden lg:block md:block sm:hidden"
+                  <a 
+                  href="#downloads"
+                    
+                    className="relative inline-flex items-center px-6 py-3 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-500 shadow-sm hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2  hidden lg:block md:block sm:hidden"
                   >
-                    <span>Download</span>
-                  </button>
+                    Download
+                    </a>
                 </div>
                 <div className="hidden md:ml-4 md:flex-shrink-0 md:flex md:items-center">
                   <button

@@ -7,16 +7,9 @@ import apple from "../../assets/Os store.svg";
 export default function FirstBody() {
   return (
     <div>
-    <div className="lg:flex my-20 mx-4 justify-around p-4 sm:flex-column md:flex:column md:items-center">
-    <div className="-mt-8 mr-11">
-        <img
-          className="transform skew-y-12 -skew-x-12 mr-4 sm:ml-24 md:w-8/12 lg:w-full  "
-          src={logo}
-          alt="e-learning board"
-          width="400"
-        />
-      </div>
-      <div className="ml-4 lg:ml-40">
+    <div className="lg:flex mt-14 items-center justify-evenly sm:flex-column md:flex:column md:items-center">
+    
+      <div className="-ml-10 max-w-2xl ">
         <p className="text-yellow-500 font-medium mb-3 ">SAT EDUCATION MATERIALS</p>
         <h2 className="text-5xl font-semibold text-blue-800 opacity-80 font-Poppins">
           {" "}
@@ -24,12 +17,12 @@ export default function FirstBody() {
         </h2>
         <h2 className="text-5xl font-semibold text-blue-800 opacity-80"> for SAT Students </h2>
         <p className="max-w-2xl pt-3 opacity-60">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. dummy text ever since the 1500s, when an unknown printer
-          took a galley of type It has survived not only five centuries, but
+        Aikins Educational Consult (AEC) is an educational consultancy that has been teaching
+         standardized examinations such as the SAT, GRE, GMAT, LSAT, MCAT, IELT, and TOEFL, as well as preparing students 
+        for other external entrance exams over the last 11yearsurvived not only five centuries, but
           also the leap into electronic.
         </p>
-        <div className="flex ">
+        <div className="flex mb-8" id="downloads">
           <a href=" # ">
             <img className=" p-1 mt-7" src={google} alt="App store" width="170" />
           </a>
@@ -38,7 +31,14 @@ export default function FirstBody() {
           </a>
         </div>
       </div>
-    
+      <div className="sm:mt-8">
+        <img
+          className="transform skew-y-12 -skew-x-12 mr-4 sm:ml-24 md:w-8/12 lg:w-full  "
+          src={logo}
+          alt="e-learning board"
+          width="400"
+        />
+      </div>    
     </div>
     <div>
           <p className="text-center justify-center items-center font-semibold text-lg flex text-blue-900 text-3xl py-2 "> Here are some <p className="ml-2 mr-2 text-yellow-500"> benefits </p> of uLEARNER</p>
