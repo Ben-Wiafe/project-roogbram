@@ -29,6 +29,7 @@ export default function Aikins() {
                 <div className="mt-6">
                   <a
                     href="http://aikinseduconsult.com/"
+                    target="_blank"
                     className="inline-flex px-8 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-yellow-500 hover:bg-yellow-600"
                   >
                     Register
