@@ -23,10 +23,10 @@ export default function FirstBody() {
           also the leap into electronic.
         </p>
         <div className="flex mb-8" id="downloads">
-          <a href=" # ">
+          <a href="https://apkfab.com/mumbai/com.ulearner.android.app/apk?h=97c3160335c3aeea081fe1da8ff05946b0b2d19e7e6a1abc083608d868e1ee77" target="_blank">
             <img className=" p-1 mt-7" src={google} alt="App store" width="170" />
           </a>
-          <a href=" # ">
+          <a href="https://apkfab.com/mumbai/com.ulearner.android.app/apk?h=97c3160335c3aeea081fe1da8ff05946b0b2d19e7e6a1abc083608d868e1ee77" target="_blank">
             <img className=" p-1 mt-7" src={apple} alt="App store" width="162" />
           </a>
         </div>

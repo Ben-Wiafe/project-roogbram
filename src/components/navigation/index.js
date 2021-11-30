@@ -26,7 +26,7 @@ export default function Example() {
                   />
                
                 </div>
-                <div className="pl-72 sm:px-80 mr-2 flex items-center md:hidden">
+                <div className="pl-52 sm:px-80 mr-2 flex items-center md:hidden">
                   
                   <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Open main menu</span>
@@ -70,9 +70,8 @@ export default function Example() {
               <div className="flex items-center">
                 <div className="flex-shrink-0">
                   <a 
-                  href="#downloads"
-                    
-                    className="relative inline-flex items-center px-6 py-3 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-500 shadow-sm hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2  hidden lg:block md:block sm:hidden"
+                  href="https://drive.google.com/uc?export=download&id=17er3pJ_3RFsQrd3UPA0qxx3mN7x21oNM" download rel="noopener noreferrer" target="_blank"
+                    className="relative inline-flex items-center px-6 py-3 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-500 shadow-sm hover:bg-yellow-600   hidden lg:block md:block sm:hidden"
                   >
                     Download
                     </a>
@@ -96,6 +95,7 @@ export default function Example() {
                       </Menu.Button>
                     </div>
                     <Transition
+
                       as={Fragment}
                       enter="transition ease-out duration-200"
                       enterFrom="transform opacity-0 scale-95"
@@ -201,7 +201,7 @@ font-medium sm:pl-5 sm:pr-6"
               <div className="mt-3 space-y-1">
                 <Disclosure.Button
                   as="a"
-                  href="https://www.apple.com/services/"
+                  href="https://drive.google.com/uc?export=download&id=17er3pJ_3RFsQrd3UPA0qxx3mN7x21oNM" download rel="noopener noreferrer" target="_blank"
                   target="_blank"
                   className="block px-4 py-2 text-base font-medium text-gray-500
 hover:text-gray-800 hover:bg-gray-100 sm:px-6"
@@ -212,7 +212,7 @@ hover:text-gray-800 hover:bg-gray-100 sm:px-6"
                 <Disclosure.Button
                   as="a"
                   target="_blank"
-                  href="https://play.google.com/store/search?q=ulearner"
+                  href="https://drive.google.com/uc?export=download&id=17er3pJ_3RFsQrd3UPA0qxx3mN7x21oNM" download rel="noopener noreferrer" target="_blank"
                   className="block px-4 py-2 text-base font-medium text-gray-500
                   hover:text-gray-800 hover:bg-gray-100 sm:px-6"
                 >
